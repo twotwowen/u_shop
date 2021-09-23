@@ -6,11 +6,12 @@
 ### 更新日志
 
 #### 2021.9.23
+- 完成上拉加载，下拉刷新
 - 完成社区数据请求与渲染
 - 图片预览
 - 完成联系我们模块
 - 加入地图板块
-- 调用bing美图api  
+- 调用bing美图api  https://api.muxiaoguo.cn/api/bing?id=today&pn=8
 
 #### 2021.9.19
 - 封装请求接口，把request挂载到Vue实例
