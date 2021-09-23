@@ -1,7 +1,7 @@
 <template>
 	<view class="goodlist">
 		<view class="goodlist_item" v-for="(item,index) in goods" :key="index">
-			<image src="../../static/icon/sj.jpg"></image>
+			<image src="../../static/icon/black.jpg"></image>
 			<view class="price">
 				<text>￥{{item.sell_price}}</text>
 				<text>￥{{item.market_price}}</text>
@@ -29,26 +29,27 @@
 
 <style lang="scss">
 	.goodlist {
+		padding: 0 15rpx;
 		display: flex;
-		width: 750rpx;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 		.goodlist_item {
-			width: 48%;
-			background-color: #fff;
+			background: #fff;
+			width: 355rpx;
 			margin: 10rpx 0;
-			box-sizing:border-box;
+			padding: 15rpx;
+			box-sizing: border-box;
 			image {
 				width: 80%;
-				height:150px;
+				height: 150px;
 				display: block;
 				margin: auto;
 			}
 			.price {
 				color: $shop-color;
-				font-weight: 36rpx;
+				font-size: 36rpx;
 				margin: 20rpx 0 5rpx 0;
-				text:nth-child(2) {
+				text:nth-child(2){
 					color: #ccc;
 					font-size: 28rpx;
 					margin-left: 17rpx;
@@ -56,11 +57,11 @@
 				}
 			}
 			.tit {
-							font-size: 28rpx;
-							line-height: 50rpx;
-							padding-bottom: 15rpx;
-							padding-top: 10rpx;
-						}
+				font-size: 28rpx;
+				line-height: 50rpx;
+				padding-bottom: 15rpx;
+				padding-top: 10rpx;
+			}
 		}
 	}
 </style>

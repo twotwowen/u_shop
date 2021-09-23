@@ -9,7 +9,7 @@
 		
 		<!-- 导航 -->
 		<view class="navs">
-			<view class="navs_item" v-for="(item,index) in navs" :key="index">
+			<view class="navs_item" v-for="(item,index) in navs" :key="index" @click="navItemClick(item.path)">
 				<view :class="item.icon"></view>
 				<text>{{item.text}}</text>
 			</view>
@@ -35,19 +35,23 @@
 				navs:[
 					{
 						icon:'iconfont icon-chaoshi',
-						text:'又是超市'
+						text:'又是超市',
+						path:'/pages/goods/goods'
 					},
 					{
 						icon:'iconfont icon-tupian',
-						text:'社区图片'
+						text:'社区图片',
+						path:'/pages/pic/pic'
 					},
 					{
 						icon:'iconfont icon-shipin',
-						text:'学习视频'
+						text:'学习视频',
+						path:'/pages/video/video'
 					},
 					{
 						icon:'iconfont icon-guanyu',
-						text:'联系我们'
+						text:'联系我们',
+						path:'/pages/contact/contact'
 					}
 				],
 				goods:[]
@@ -73,8 +77,14 @@
 					url:'/api/getgoods?pageindex=1'
 				})
 				this.goods = res.data.message
+			},
+			//跳转到商品列表
+			navItemClick(path) {
+				console.log('点击了'),
+				uni.navigateTo({
+					url:path
+				})
 			}
-			//请求商品图片
 			
 		}
 	}
