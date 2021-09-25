@@ -28,7 +28,10 @@
 
 
 ### 项目展示
-![show](/showimg/展示.gif) ![wxshow](/showimg/小程序展示.gif) 
-![index](/showimg/首页.png)  ![message](/showimg/资讯.png)
-![about](/showimg/联系我们.png)  ![img](/showimg/社区图片.png)
+![show](/showimg/展示.gif)  <br/> 
+![wxshow](/showimg/小程序展示.gif) <br/> 
+![index](/showimg/首页.png) <br/> 
+![message](/showimg/资讯.png) <br/> 
+![about](/showimg/联系我们.png) <br/> 
+![img](/showimg/社区图片.png) <br/> 
 ![productdetail](/showimg/商品详情.png)
