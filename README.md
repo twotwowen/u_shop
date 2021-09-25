@@ -26,4 +26,7 @@
 
 
 ### 项目展示
-![show](/showimg/展示.gif)
+![show](/showimg/展示.gif) 
+![index](/showimg/首页.png)  ![index](/showimg/资讯.png)
+![index](/showimg/联系我们.png)  ![index](/showimg/社区图片.png)
+![index](/showimg/商品详情.png)
