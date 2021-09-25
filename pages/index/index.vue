@@ -18,7 +18,7 @@
 		<!-- 推荐商品 -->
 		<view class="hot_goods">
 			<view class="title">推荐商品</view>
-			<good-list :goods="goods"></good-list>
+			<good-list :goods="goods" @goodsDetail="goodsDetail"></good-list>
 		</view>
 	</view>
 </template>
@@ -83,6 +83,11 @@
 				console.log('点击了'),
 				uni.navigateTo({
 					url:path
+				})
+			},
+			goodsDetail(id) {
+				uni.navigateTo({
+					url:'../goods-detail/goods-detail?id='+id
 				})
 			}
 			

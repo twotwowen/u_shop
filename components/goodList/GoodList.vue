@@ -1,6 +1,6 @@
 <template>
 	<view class="goodlist">
-		<view class="goodlist_item" v-for="(item,index) in goods" :key="index">
+		<view class="goodlist_item" v-for="(item,index) in goods" :key="index" @click="goodsClick(item.id)">
 			<image src="../../static/icon/black.jpg"></image>
 			<view class="price">
 				<text>￥{{item.sell_price}}</text>
@@ -21,6 +21,11 @@
 		data() {
 			return {
 				img:[]
+			}
+		},
+		methods:{
+			goodsClick(id) {
+				this.$emit('goodsDetail',id)
 			}
 		}
 		

@@ -1,6 +1,6 @@
 <template>
 	<view class="goods">
-		<good-list :goods="goods"></good-list>
+		<good-list :goods="goods" @goodsDetail="goodsDetail"></good-list>
 		<view class="isOver" v-if="flag">
 			-----我是有底线的-----
 		</view>
@@ -50,6 +50,11 @@
 				})
 				this.goods = [...this.goods,...res.data.message]
 				callback && callback()
+			},
+			goodsDetail(id) {
+				uni.navigateTo({
+					url:'../goods-detail/goods-detail?id='+id
+				})
 			}
 		}
 	}

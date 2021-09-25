@@ -26,4 +26,8 @@
 .icon-chaoshi:before {
   content: "\e60d";
 }
+.gomeImgLoad {
+	width: 100%;
+	height: auto;
+}
 

@@ -36,8 +36,20 @@
 			"style": {
 				"navigationBarTitleText":"关于我们"
 			}
-		}
-	],
+		},
+		{
+			"path":"pages/news-detail/news-detail",
+			"style": {
+				"navigationBarTitleText":"资讯详情"
+			}
+		},
+		{
+			"path" : "pages/goods-detail/goods-detail",
+			"style" :{
+				"navigationBarTitleText":"商品详情"
+			}                                                              
+	}
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "又是一个商城",
