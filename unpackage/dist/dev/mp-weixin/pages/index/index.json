@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "又是一个商城",
+  "usingComponents": {
+    "good-list": "/components/goodList/GoodList"
+  }
+}

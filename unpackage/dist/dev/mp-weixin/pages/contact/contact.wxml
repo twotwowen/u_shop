@@ -1,0 +1,1 @@
+<view class="contact"><image src="../../static/icon/about.jpg" mode></image><view class="info"><view data-event-opts="{{[['tap',[['phone',['$event']]]]]}}" bindtap="__e">联系我们：123456789（点击拨打）</view><view>地址：xxxxxxxxxxxxxxxxxxxxxxxx</view></view><map class="map"></map></view>
